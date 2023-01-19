@@ -1,0 +1,24 @@
+/* TODO: Add routes for admin with a server connected
+Add testimonial section to bottom of conocernos instead of iglesias section
+Add search by having json information on server or front end. This 
+    information will be an object that includes the page and text of each page
+    Then use filter method to filter out the pages that dont include the text 
+    Ex
+
+   /*const [blogs, setBlogs] =useState([
+        "{page: "Conocernos" , body: "wefwerf wwe fwe we w f"}
+        {page: "Unete" , body: "hello u little chiuckne butt"}
+    ])
+
+    "const [search, setSearch] =useState("")
+
+    on form change update state"
+
+    return ("
+        <>
+            <Bloglist blogs={blogs.filter((blog) => blog.body ==="search")}>
+        </>
+    )""
+
+    Copy color theme of facebook and buttons
+    rgb(239,242,245, .85 for tabs)*/
