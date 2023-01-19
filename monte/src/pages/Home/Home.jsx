@@ -16,7 +16,7 @@ function Home() {
       <Navbar />
       <Header>
         <img
-          className="w-4/6 h-auto flex place-content-center justify-center absolute m-auto z-50 md:h-4/6 md:w-auto"
+          className=" w-4/6 h-auto flex place-content-center justify-center absolute m-auto z-50 md:h-4/6 md:w-auto"
           src={Logo}
         />
         <Video video={HeroVideo} />
