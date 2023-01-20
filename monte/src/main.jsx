@@ -13,6 +13,9 @@ import {
   Lideres,
   MensajeDelPresidente,
   Iglesias,
+  RightsReserved,
+  TermsOfService,
+
 } from "./pages";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -35,6 +38,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         ></Route>
         <Route exact path="/iglesias" element={<Iglesias />}></Route>
         <Route exact path="/iglesias/:id" element={<Iglesias />}></Route>
+        <Route exact path="/rights-reserved" element={<RightsReserved />}></Route>
+        <Route exact path="/terms-of-service" element={<TermsOfService />}></Route>
 
       </Routes>
     </Router>
