@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, Card } from "../../components/index";
+import { Banner, MobileCard } from "../../components/index";
 import {
   Navbar,
   Footer,
@@ -60,7 +60,36 @@ function Home() {
         </Banner>
       </Header>
       <DefaultBody>
-        <Card></Card>
+        <MobileCard
+          headerText="Conocernos"
+          subheadingText="Ver nuestra mision, lideres, historia, y mas
+"
+          buttonLink="/conocernos"
+          buttonText="VER AHORA"
+          image={ConocernosCardImage}
+        />
+        <MobileCard
+          headerText="Iglesias"
+          subheadingText="¿Listo para conocer una iglesia? Encuentre una congregación cerca de ti
+"
+          buttonLink=""
+          buttonText="ACOMPANANOS"
+          image=""
+        />
+        <MobileCard
+          headerText=""
+          subheadingText=""
+          buttonLink=""
+          buttonText=""
+          image=""
+        />
+        <MobileCard
+          headerText=""
+          subheadingText=""
+          buttonLink=""
+          buttonText=""
+          image=""
+        />
       </DefaultBody>
       <Footer />
     </div>
