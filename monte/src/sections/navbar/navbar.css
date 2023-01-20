@@ -1,10 +1,9 @@
 @media (max-width: 750px) {
     .navbar {
         background: rgba(255, 255, 255, 0.25);
-        box-shadow: 5px 8px 35px 5px rgba(255, 255, 255, 0.37);
+        box-shadow: 0px 8px 30px 0px rgba(255, 255, 255, 0.37);
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        border-radius: 10px 10px 10px 10px;
+        border-radius: 0px 0px 5px 5px;
     }
 }
