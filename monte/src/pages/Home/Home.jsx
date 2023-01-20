@@ -31,7 +31,7 @@ function Home() {
         buttonText="EN VIVO"
         buttonLink="/en-vivo"
       >
-        <Banner color="bg-red-800/80" headerText="" subheadingText="">
+        <Banner color="bg-red-800/80" headerText="" subheadingText="" position="bottom-0">
           <div className="content">
             <p className="text-yellow-400 font-semibold text-md">
               HORARIOS DE SERVICIO GENERAL
