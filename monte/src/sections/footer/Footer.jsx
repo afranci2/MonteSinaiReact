@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-red-900 h-full z-50 relative text-center md:text-left">
       <div className="md:grid grid-cols-2 sm:gap-6 p-16 w-11/12">
-        <div className=" content flex flex-col m-auto">
+        <div className=" content flex flex-col m-auto gap-4">
           <div className="logo">
             <p className="text-md">MOVIMIENTO PENTECOSTAL</p>
             <p className="font-serif text-4xl text-gold">MONTE SINAI</p>
@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="link flex flex-col gap-4 py-4 space-y-4 md:hidden">
-            <ul className="flex p-6 flex-col space-y-2 font-semibold">
+            <ul className="flex p-2 flex-col space-y-2 font-semibold">
               <li key={1}>
                 <Link to="/">Conocernos</Link>
               </li>
@@ -45,7 +45,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="md:flex gap-8 desktop-links sm: hidden">
+        <div className="md:flex px-8 gap-8 desktop-links sm: hidden">
           <ul className="flex flex-col space-y-2 font-semibold">
             <li key={1}>
               <Link to="/">Conocernos</Link>
