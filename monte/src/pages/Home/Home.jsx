@@ -1,4 +1,5 @@
 import React from "react";
+import { Banner } from "../../components/index";
 import {
   Navbar,
   Footer,
@@ -30,10 +31,14 @@ function Home() {
         buttonText="EN VIVO"
         buttonLink="/en-vivo"
       >
-        <div className="bg-red-800/80 p-12 text-center flex bottom-0 services m-auto justify-center h-auto w-full absolute z-50">
+        <Banner color="bg-red-800/80" headerText="" subheadingText="">
           <div className="content">
-            <p className="text-yellow-400 font-semibold text-md">HORARIOS DE SERVICIO GENERAL</p>
-            <p className="text-xs">** Tiempos de servicio pueden variar según la ubicación **</p>
+            <p className="text-yellow-400 font-semibold text-md">
+              HORARIOS DE SERVICIO GENERAL
+            </p>
+            <p className="text-xs">
+              ** Tiempos de servicio pueden variar según la ubicación **
+            </p>
             <br></br>
             <div className="times flex justify-between font-medium text-sm">
               <p>
@@ -47,7 +52,7 @@ function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </Banner>
       </Header>
       <Footer />
     </div>
