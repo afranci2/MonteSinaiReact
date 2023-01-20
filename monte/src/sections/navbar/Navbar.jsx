@@ -17,27 +17,27 @@ function Navbar() {
           {toggleMenu ? (
             <RiCloseLine
               color="#fff"
-              size={27}
+              size={29}
               onClick={() => setToggleMenu(false)}
             />
           ) : (
             <RiMenu2Line
               color="#fff"
-              size={25}
+              size={24}
               onClick={() => setToggleMenu(true)}
             />
           )}
           {toggleMenu && (
             <div className="links-mobile slide-in-left ">
               <div
-                className="mobile-links w-5/6 p-10 bg-red-400 
+                className="text-center z-50 mobile-links w-5/6 p-10 bg-slate-100 top-16
                flex-col absolute rounded text-black 
              
               font-semibold text-2xl"
               >
-                <div className=" mobile-menu-pop">
+                <div className=" mobile-menu-pop py-20">
                   <ul>
-                    <li className="p-2 pt-8" key={1}>
+                    <li className="p-2" key={1}>
                       <Link to="/conocernos">
                         <p>Conocernos</p>
                       </Link>
@@ -62,12 +62,7 @@ function Navbar() {
                         <p>Donar</p>
                       </Link>
                     </li>
-                    <li className="flex p-2 pt-16 justify-center" key={1}>
-                      <RiCloseLine
-                        size={30}
-                        onClick={() => setToggleMenu(true)}
-                      />
-                    </li>
+
                   </ul>
                 </div>
               </div>
