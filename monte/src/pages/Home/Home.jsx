@@ -30,12 +30,12 @@ function Home() {
         buttonText="EN VIVO"
         buttonLink="/en-vivo"
       >
-        <div className="bg-red-800/70 flex gap-4 bottom-0 services h-auto w-full absolute z-50">
+        <div className="bg-red-800/80 p-12 text-center flex bottom-0 services m-auto justify-center h-auto w-full absolute z-50">
           <div className="content">
-            <p>HORARIOS DE SERVICIO GENERAL</p>
-            <p>** Tiempos de servicio pueden variar según la ubicación **</p>
+            <p className="text-yellow-400 font-semibold text-md">HORARIOS DE SERVICIO GENERAL</p>
+            <p className="text-xs">** Tiempos de servicio pueden variar según la ubicación **</p>
             <br></br>
-            <div className="times">
+            <div className="times flex justify-between font-medium text-sm">
               <p>
                 Domingo <br></br>3:00 PM EST
               </p>
