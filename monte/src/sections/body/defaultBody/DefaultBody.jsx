@@ -1,8 +1,10 @@
 import React from 'react'
 
-const DefaultBody = () => {
+const DefaultBody = (props) => {
   return (
-    <div className='h-auto w-full'></div>
+    <div className='h-auto w-full'>
+      {props.children}
+    </div>
   )
 }
 
