@@ -1,10 +1,19 @@
 import React from "react";
+import Button from '../../components/mainButton/MainButton'
 
 function Header(props) {
   return (
-    <div className="flex justify-center items-center w-screen h-screen">
+    <div className="wrapper relative flex justify-center items-center w-screen h-screen">
       {props.children}
-      <img className="blur-sm h-screen w-auto" src={props.image}></img>
+      <div className={`${props.classChangeText ? `${props.classChangeText}` : 'absolute'}`}>
+        <p className="font-semibold text-3xl">{props.headerText}</p>
+        <p className="sm: w-3/4">
+          {props.subheadingText}
+        </p>
+        <Button link={props.buttonLink} text={props.buttonText}>Hello</Button>
+      </div>
+
+      <img className="min-h-screen object-cover" src={props.image}></img>
     </div>
   );
 }

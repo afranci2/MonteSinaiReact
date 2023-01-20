@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Mona Sans'],
         'serif': ['Goldenbook']
+      },
+      fontSize: {
+        'header' : '3xl'
       }
     },
   },
