@@ -54,6 +54,7 @@ function Home() {
           </div>
         </Banner>
       </Header>
+      <DefaultBody></DefaultBody>
       <Footer />
     </div>
   );
