@@ -8,7 +8,7 @@ Link to project: www.elmontesinai.org
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://drive.google.com/file/d/1vZrhxzOjQ5jj1FECFMXhMDloktAskTVe/view?usp=share_link)
 
 
 ## Tech Stack
