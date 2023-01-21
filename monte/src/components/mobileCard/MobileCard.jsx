@@ -9,7 +9,10 @@ const MobileCard = (props) => {
   buttonLink={props.buttonLink}
   buttonText={props.buttonText}
   image={props.image}
-  contentPosition="bottom"/>
+  contentPosition="bottom-0"
+  contentWidth="w-full"
+  height="40"
+  />
 };
 
 export default MobileCard;

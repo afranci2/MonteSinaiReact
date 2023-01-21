@@ -1,5 +1,11 @@
 import React from "react";
-import { Banner, MobileCard } from "../../components/index";
+import {
+  Banner,
+  TextLeftTab,
+  TextRightTab,
+  MobileCard,
+  SideTab
+} from "../../components/index";
 import {
   Navbar,
   Footer,
@@ -23,7 +29,7 @@ function Home() {
       <Navbar />
       <Header>
         <img
-          className="backdrop-blur-sm w-4/6 h-auto flex place-content-center justify-center absolute m-auto z-40 md:h-1/3 md:w-auto"
+          className="backdrop-blur-sm h-2/6 w-auto flex place-content-center justify-center absolute m-auto z-40 md:h-2/5 md:w-auto"
           src={Logo}
         />
         <Video video={HeroVideo} />
@@ -82,7 +88,6 @@ function Home() {
             buttonLink="/iglesias"
             buttonText="ACOMPANANOS"
             image={IglesiasCardImage}
-
           />
           <MobileCard
             headerText="Unete a Nosotros
@@ -105,47 +110,40 @@ function Home() {
         </DefaultBody>
       </MediaQuery>
       <MediaQuery minWidth={800}>
-        <DefaultBody>
-          <div className="grid grid-flow-col gap-12">
-            <div className="lefttabs">
-              <MobileCard
-                headerText="Conocernos"
-                subheadingText="Ver nuestra mision, lideres, historia, y mas
-"
-                buttonLink="/conocernos"
-                buttonText="VER AHORA"
-                image={ConocernosCardImage}
-                
-
-              />
+          <div className="grid grid-flow-col gap-8 w-10/12 m-auto">
+            <div className="col-span-1 lefttabs ">
+              <SideTab></SideTab>
             </div>
-            <div className="tabs col-span-3">
-              <MobileCard
-                headerText="Conocernos"
-                subheadingText="Ver nuestra mision, lideres, historia, y mas
-"
-                buttonLink="/conocernos"
-                buttonText="VER AHORA"
-                image={ConocernosCardImage}
-              />
-              <MobileCard
-                headerText="Iglesias"
-                subheadingText="¿Listo para conocer una iglesia? Encuentre una congregación cerca de ti
-"
-                buttonLink="/iglesias"
-                buttonText="ACOMPANANOS"
-                image={IglesiasCardImage}
-              />
-              <MobileCard
-                headerText="Unete a Nosotros
+            <div className="col-span-6 tabs ">
+              <TextLeftTab
+                headerText="Eventos
           "
-                subheadingText="Es hora de ver lo que Dios puede hacer a través de ti. ¡Únase a nosotros!
+                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
           "
                 buttonLink="/unete"
-                buttonText="UNETE"
-                image={UneteCardImage}
+                buttonText="EVENTOS"
+                image={EventosCardImage}
               />
-              <MobileCard
+              <TextRightTab
+                headerText="Eventos
+          "
+                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+                buttonLink="/unete"
+                buttonText="EVENTOS"
+                image={EventosCardImage}
+              />
+
+              <TextLeftTab
+                headerText="Eventos
+          "
+                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+                buttonLink="/unete"
+                buttonText="EVENTOS"
+                image={EventosCardImage}
+              />
+              <TextRightTab
                 headerText="Eventos
           "
                 subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
@@ -156,7 +154,6 @@ function Home() {
               />
             </div>
           </div>
-        </DefaultBody>
       </MediaQuery>
       <Footer />
     </div>
