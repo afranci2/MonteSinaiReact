@@ -111,7 +111,7 @@ function Home() {
         </DefaultBody>
       </MediaQuery>
       <MediaQuery minWidth={800}>
-        <div className="overflow-hidden grid grid-flow-col gap-12 w-10/12 m-auto max-w-screen">
+        <div className=" grid grid-flow-col gap-12 w-10/12 m-auto max-w-screen">
           <div className="w-full smalllefttabs ">
             <SideTab headerText="hwerer">
               <div className="content">

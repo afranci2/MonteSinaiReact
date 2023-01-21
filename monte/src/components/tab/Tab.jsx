@@ -4,7 +4,7 @@ import { Card, SecondaryButton } from "../../components/index";
 
 const Tab = (props) => {
   return (
-    <div className="my-8 w-full relative overflow-hidden rounded-xl backdrop-blur-sm drop-shadow-lg">
+    <div className="my-8 w-full relative overflow-hidden rounded-xl drop-shadow-lg">
       <div
         className={`whole ${props.height} bg-${props.backgroundColor}` }
       >
@@ -15,7 +15,7 @@ const Tab = (props) => {
         />
         
         <div
-          className={`overflow-hidden flex p-8 text-center rounded-md ${props.contentPosition} absolute z-50 content ${props.contentHeight} items-center bg-red-800/90 ${props.contentWidth}`}
+          className={`flex p-8 text-center rounded-md ${props.contentPosition} absolute z-50 content ${props.contentHeight} items-center bg-red-800/90 ${props.contentWidth}`}
         >
             
           <div className="flex flex-col m-auto w-full">
