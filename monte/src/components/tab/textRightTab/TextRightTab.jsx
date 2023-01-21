@@ -12,7 +12,7 @@ const TextRightTab = (props) => {
   contentPosition="bottom-0 right-0"
   contentWidth="w-5/12"
   contentHeight="h-full"
-  height="h-[20em]"
+  height="h-[28em]"
   />
 };
 

@@ -4,7 +4,8 @@ import {
   TextLeftTab,
   TextRightTab,
   MobileCard,
-  SideTab
+  SideTab,
+  SocialMedia
 } from "../../components/index";
 import {
   Navbar,
@@ -110,50 +111,57 @@ function Home() {
         </DefaultBody>
       </MediaQuery>
       <MediaQuery minWidth={800}>
-          <div className="grid grid-flow-col gap-8 w-10/12 m-auto">
-            <div className="col-span-1 lefttabs ">
-              <SideTab></SideTab>
-            </div>
-            <div className="col-span-6 tabs ">
-              <TextLeftTab
-                headerText="Eventos
-          "
-                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
-                buttonLink="/unete"
-                buttonText="EVENTOS"
-                image={EventosCardImage}
-              />
-              <TextRightTab
-                headerText="Eventos
-          "
-                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
-                buttonLink="/unete"
-                buttonText="EVENTOS"
-                image={EventosCardImage}
-              />
-
-              <TextLeftTab
-                headerText="Eventos
-          "
-                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
-                buttonLink="/unete"
-                buttonText="EVENTOS"
-                image={EventosCardImage}
-              />
-              <TextRightTab
-                headerText="Eventos
-          "
-                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
-                buttonLink="/unete"
-                buttonText="EVENTOS"
-                image={EventosCardImage}
-              />
-            </div>
+        <div className="grid grid-flow-col gap-16 w-10/12 m-auto">
+          <div className="col-span-1 smalllefttabs ">
+          <SideTab>
+              <div className="content">
+                <SocialMedia></SocialMedia>
+              </div>
+            </SideTab>
+            <SideTab headingText="hwerer" buttonText="gewfew" buttonLink='./'/>
+            <SideTab buttonText="gewfew"/>
+            <SideTab/>
           </div>
+          <div className="col-span-12 maintabs ">
+            <TextLeftTab
+              headerText="Eventos
+          "
+              subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+              buttonLink="/unete"
+              buttonText="EVENTOS"
+              image={EventosCardImage}
+            />
+            <TextRightTab
+              headerText="Eventos
+          "
+              subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+              buttonLink="/unete"
+              buttonText="EVENTOS"
+              image={EventosCardImage}
+            />
+
+            <TextLeftTab
+              headerText="Eventos
+          "
+              subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+              buttonLink="/unete"
+              buttonText="EVENTOS"
+              image={EventosCardImage}
+            />
+            <TextRightTab
+              headerText="Eventos
+          "
+              subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+              buttonLink="/unete"
+              buttonText="EVENTOS"
+              image={EventosCardImage}
+            />
+          </div>
+        </div>
       </MediaQuery>
       <Footer />
     </div>

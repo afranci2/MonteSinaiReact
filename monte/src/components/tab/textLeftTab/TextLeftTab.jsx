@@ -10,9 +10,9 @@ const TextRightTab = (props) => {
   buttonText={props.buttonText}
   image={props.image}
   contentPosition="bottom-0 left-0"
-  contentWidth="w-5/12"
+  contentWidth="w-5/12 min-w-1/2"
   contentHeight="h-full"
-  height="h-[20em]"
+  height="h-[28em]"
   width="w-screen"/>
 };
 
