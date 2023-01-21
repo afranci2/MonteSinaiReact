@@ -5,7 +5,7 @@ import {
   TextRightTab,
   MobileCard,
   SideTab,
-  SocialMedia
+  SocialMedia,
 } from "../../components/index";
 import {
   Navbar,
@@ -111,18 +111,33 @@ function Home() {
         </DefaultBody>
       </MediaQuery>
       <MediaQuery minWidth={800}>
-        <div className="grid grid-flow-col gap-16 w-10/12 m-auto">
-          <div className="col-span-1 smalllefttabs ">
-          <SideTab>
+        <div className="overflow-hidden grid grid-flow-col gap-12 w-10/12 m-auto max-w-screen">
+          <div className="w-full smalllefttabs ">
+            <SideTab headerText="hwerer">
               <div className="content">
                 <SocialMedia></SocialMedia>
               </div>
             </SideTab>
-            <SideTab headingText="hwerer" buttonText="gewfew" buttonLink='./'/>
-            <SideTab buttonText="gewfew"/>
-            <SideTab/>
+            <SideTab
+              headerText="hwerer"
+              subheaderText="efwefw"
+              buttonText="gewfew"
+              buttonLink="./"
+            />
+            <SideTab
+              headerText="hwerer"
+              subheaderText="efwefw"
+              buttonText="gewfew"
+              buttonLink="./"
+            />
+            <SideTab
+              headerText="hwerer"
+              subheaderText="efwefw"
+              buttonText="gewfew"
+              buttonLink="./"
+            />
           </div>
-          <div className="col-span-12 maintabs ">
+          <div className="w-full maintabs">
             <TextLeftTab
               headerText="Eventos
           "
