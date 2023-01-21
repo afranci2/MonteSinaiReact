@@ -11,7 +11,7 @@ const MobileCard = (props) => {
   image={props.image}
   contentPosition="bottom-0"
   contentWidth="w-full"
-  height="40"
+  height="h-[40em]"
   />
 };
 

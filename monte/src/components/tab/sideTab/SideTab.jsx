@@ -5,10 +5,16 @@ import SocialMedia from "../../../components/tab/sideTab/SocialMedia";
 
 const SideTab = (props) => {
   return (
-    <Tab height="32" backgroundColor="white">
-      <p className="text-black text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id itaque laboriosam error, vel aliquid aperiam magni, vitae commodi doloremque blanditiis ipsa ipsum vero perspiciatis explicabo impedit cupiditate magnam nihil! </p>
-      <div className="content">
-        <SocialMedia></SocialMedia>
+    <Tab backgroundColor="bg-gray-100">
+      <div className="container bg-red-500 h-80 flex flex-col gap-4">
+        <p className="text-black text-md ">Siguenos </p>
+        <p className="text-black text-sm ">
+          Inscríbase ahora como voluntario y vea lo que Dios puede hacer a
+          través de usted.
+        </p>
+        <div className="content bg-blue-400">
+          <SocialMedia></SocialMedia>
+        </div>
       </div>
     </Tab>
   );

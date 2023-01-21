@@ -6,7 +6,7 @@ const Tab = (props) => {
   return (
     <div className="my-8 relative overflow-hidden rounded-xl backdrop-blur-sm drop-shadow-lg">
       <div
-        className={`whole h-[${props.height}em] bg-${props.backgroundColor}` }
+        className={`whole ${props.height} bg-${props.backgroundColor}` }
       >
               {props.children}
         <img

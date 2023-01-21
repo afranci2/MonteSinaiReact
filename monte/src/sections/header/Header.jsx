@@ -10,6 +10,7 @@ function Header(props) {
         <p className="sm: w-3/4">
           {props.subheadingText}
         </p>
+
         <Button color="bg-red-800" link={props.buttonLink} text={props.buttonText}>Hello</Button>
       </div>
 
