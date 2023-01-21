@@ -1,12 +1,15 @@
-import React from 'react'
-import {Card} from '../../components/card'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Tab, Card, SecondaryButton } from "../../components/index";
 
-const MobileCard = () => {
-  return (
-    <Card>
-        
-    </Card>
-  )
-}
+const MobileCard = (props) => {
+  return <Tab imagePosition={props.imagePosition}
+  headerText={props.headerText}
+  subheadingText={props.subheadingText}
+  buttonLink={props.buttonLink}
+  buttonText={props.buttonText}
+  image={props.image}
+  contentPosition="bottom"/>
+};
 
-export default MobileCard
+export default MobileCard;

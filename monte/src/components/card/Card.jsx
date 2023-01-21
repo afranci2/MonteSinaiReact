@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Card = (props) => {
   return (
-    <div className='rounded-md backdrop-blur-sm drop-shadow-md'>{props.children}</div>
-  )
-}
+    <div className="my-8 relative overflow-hidden rounded-xl backdrop-blur-sm drop-shadow-lg">
+      {props.children}
+    </div>
+  );
+};
 
-export default Card
+export default Card;

@@ -11,6 +11,11 @@ import {
 import HeroVideo from "../../assets/video/church intro video.mp4";
 import Logo from "../../assets/logo/logo.png";
 import Michael from "../../assets/img/section2.jpg";
+import ConocernosCardImage from "../../assets/img/pastor1.jpg";
+import IglesiasCardImage from "../../assets/img/CHURCH-BUILDING.jpg";
+import UneteCardImage from "../../assets/img/izzy.jpg";
+import EventosCardImage from "../../assets/img/nimsy.jpg";
+import MediaQuery from "react-responsive";
 
 function Home() {
   return (
@@ -32,7 +37,7 @@ function Home() {
         buttonLink="/en-vivo"
       >
         <Banner
-          color="bg-red-800/80"
+          color="bg-red-800/90"
           headerText=""
           subheadingText=""
           position="bottom-0"
@@ -59,38 +64,100 @@ function Home() {
           </div>
         </Banner>
       </Header>
-      <DefaultBody>
-        <MobileCard
-          headerText="Conocernos"
-          subheadingText="Ver nuestra mision, lideres, historia, y mas
+      <MediaQuery maxWidth={800}>
+        <DefaultBody>
+          <MobileCard
+            headerText="Conocernos"
+            subheadingText="Ver nuestra mision, lideres, historia, y mas
 "
-          buttonLink="/conocernos"
-          buttonText="VER AHORA"
-          image={ConocernosCardImage}
-        />
-        <MobileCard
-          headerText="Iglesias"
-          subheadingText="¿Listo para conocer una iglesia? Encuentre una congregación cerca de ti
+            buttonLink="/conocernos"
+            buttonText="VER AHORA"
+            image={ConocernosCardImage}
+            imagePosition="object-left"
+          />
+          <MobileCard
+            headerText="Iglesias"
+            subheadingText="¿Listo para conocer una iglesia? Encuentre una congregación cerca de ti
 "
-          buttonLink=""
-          buttonText="ACOMPANANOS"
-          image=""
-        />
-        <MobileCard
-          headerText=""
-          subheadingText=""
-          buttonLink=""
-          buttonText=""
-          image=""
-        />
-        <MobileCard
-          headerText=""
-          subheadingText=""
-          buttonLink=""
-          buttonText=""
-          image=""
-        />
-      </DefaultBody>
+            buttonLink="/iglesias"
+            buttonText="ACOMPANANOS"
+            image={IglesiasCardImage}
+
+          />
+          <MobileCard
+            headerText="Unete a Nosotros
+          "
+            subheadingText="Es hora de ver lo que Dios puede hacer a través de ti. ¡Únase a nosotros!
+          "
+            buttonLink="/unete"
+            buttonText="UNETE"
+            image={UneteCardImage}
+          />
+          <MobileCard
+            headerText="Eventos
+          "
+            subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+            buttonLink="/unete"
+            buttonText="EVENTOS"
+            image={EventosCardImage}
+          />
+        </DefaultBody>
+      </MediaQuery>
+      <MediaQuery minWidth={800}>
+        <DefaultBody>
+          <div className="grid grid-flow-col gap-12">
+            <div className="lefttabs">
+              <MobileCard
+                headerText="Conocernos"
+                subheadingText="Ver nuestra mision, lideres, historia, y mas
+"
+                buttonLink="/conocernos"
+                buttonText="VER AHORA"
+                image={ConocernosCardImage}
+                
+
+              />
+            </div>
+            <div className="tabs col-span-3">
+              <MobileCard
+                headerText="Conocernos"
+                subheadingText="Ver nuestra mision, lideres, historia, y mas
+"
+                buttonLink="/conocernos"
+                buttonText="VER AHORA"
+                image={ConocernosCardImage}
+              />
+              <MobileCard
+                headerText="Iglesias"
+                subheadingText="¿Listo para conocer una iglesia? Encuentre una congregación cerca de ti
+"
+                buttonLink="/iglesias"
+                buttonText="ACOMPANANOS"
+                image={IglesiasCardImage}
+              />
+              <MobileCard
+                headerText="Unete a Nosotros
+          "
+                subheadingText="Es hora de ver lo que Dios puede hacer a través de ti. ¡Únase a nosotros!
+          "
+                buttonLink="/unete"
+                buttonText="UNETE"
+                image={UneteCardImage}
+              />
+              <MobileCard
+                headerText="Eventos
+          "
+                subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
+          "
+                buttonLink="/unete"
+                buttonText="EVENTOS"
+                image={EventosCardImage}
+              />
+            </div>
+          </div>
+        </DefaultBody>
+      </MediaQuery>
       <Footer />
     </div>
   );

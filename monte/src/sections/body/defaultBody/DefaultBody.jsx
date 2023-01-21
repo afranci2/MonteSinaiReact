@@ -2,7 +2,7 @@ import React from 'react'
 
 const DefaultBody = (props) => {
   return (
-    <div className='h-auto w-full'>
+    <div className='relative m-auto p-8 md:w-11/12'>
       {props.children}
     </div>
   )

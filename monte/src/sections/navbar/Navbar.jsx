@@ -69,7 +69,7 @@ function Navbar() {
             </div>
           )}
         </div>
-        <div className="hidden md:flex items-center cursor-pointer">
+        <div className="desktop-logo hidden md:flex items-center cursor-pointer">
           <Link to="/">
             {" "}
             <img className="w-48 mr-2 mt-4 mb-4" src={logo} />
@@ -81,23 +81,23 @@ function Navbar() {
           </a>
         </div>
         <div>
-          <ul className="links hidden md:flex items-center mr-3 ">
-            <li className="ml-12 inline-block text-xs" key={1}>
+          <ul className="desktop-links text-sm font-medium hidden md:flex items-center mr-3 ">
+            <li className="ml-12 inline-block " key={1}>
               <Link to="/conocernos">Conocernos</Link>
             </li>
-            <li className="ml-12 inline-block text-xs" key={2}>
+            <li className="ml-12 inline-block " key={2}>
               <Link to="/iglesias">Iglesias</Link>
             </li>
-            <li className="ml-12 inline-block text-xs" key={3}>
+            <li className="ml-12 inline-block " key={3}>
               <Link to="/unete">Unete</Link>
             </li>
-            <li className="ml-12 inline-block text-xs" key={4}>
+            <li className="ml-12 inline-block " key={4}>
               <Link to="/eventos">Eventos</Link>
             </li>
-            <li className="ml-12 inline-block text-xs" key={5}>
+            <li className="ml-12 inline-block " key={5}>
               <Link to="/donar">Donar</Link>
             </li>
-            <li className="ml-12 inline-block text-xs w-6" key={6}>
+            <li className="ml-12 inline-block  w-6" key={6}>
               <img src={searchIcon} />
             </li>
           </ul>

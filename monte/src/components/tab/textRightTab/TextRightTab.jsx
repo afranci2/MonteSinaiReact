@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Tab, Card, SecondaryButton } from "../../../components/index";
 
-const TextRightTab = () => {
-  return (
-    <div>TextRightTab</div>
-  )
-}
+const MobileCard = (props) => {
+  return <Tab imagePosition={props.imagePosition}
+  headerText={props.headerText}
+  subheadingText={props.subheadingText}
+  buttonLink={props.buttonLink}
+  buttonText={props.buttonText}
+  image={props.image}
+  contentPosition="bottom"/>
+};
 
-export default TextRightTab
+export default MobileCard;
