@@ -119,21 +119,26 @@ function Home() {
               </div>
             </SideTab>
             <SideTab
-              headerText="hwerer"
-              subheaderText="efwefw"
-              buttonText="gewfew"
+              headerText="Listo para servir?
+              "
+              subheaderText="Inscríbase ahora como voluntario y vea lo que Dios puede hacer a través de usted.
+              "
+              buttonText="COMENZAR AHORA"
               buttonLink="./"
             />
             <SideTab
-              headerText="hwerer"
-              subheaderText="efwefw"
-              buttonText="gewfew"
+              headerText="Diezmar"
+              subheaderText="Dar una ofrenda o programa diezmos recurrentes.
+              "
+              buttonText="DAR AHORA"
               buttonLink="./"
             />
             <SideTab
-              headerText="hwerer"
-              subheaderText="efwefw"
-              buttonText="gewfew"
+              headerText="COVID-19
+              "
+              subheaderText="Consulte nuestra política de COVID-19 y los nuevos desarrollos
+              "
+              buttonText="LEER MAS"
               buttonLink="./"
             />
           </div>
