@@ -7,7 +7,7 @@ const SecondaryButton = (props) => {
       <Link to={props.link}>
         <div
           className={
-            "m-auto rounded-md bg-zinc-100 justify-center p-4 w-fit px-12 text-black shadow-sm"
+            "m-auto rounded-md bg-white justify-center p-4 w-fit px-12 text-black shadow-sm"
           }
         >
           <p className="flex justify-center text-xs font-bold"> {props.text}</p>

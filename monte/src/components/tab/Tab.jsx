@@ -4,7 +4,7 @@ import { Card, SecondaryButton } from "../../components/index";
 
 const Tab = (props) => {
   return (
-    <div className="my-8 w-full relative overflow-hidden rounded-xl drop-shadow-md">
+    <div className="my-8 w-fit relative overflow-hidden rounded-xl drop-shadow-md">
       <div
         className={`whole ${props.height} bg-${props.backgroundColor}` }
       >
