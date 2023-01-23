@@ -7,5 +7,5 @@ app.get("/", (request,response) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`  on port ${PORT}`)
+    console.log(`Server  on port ${PORT}`)
 })
