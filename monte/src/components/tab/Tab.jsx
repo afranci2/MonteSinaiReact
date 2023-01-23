@@ -10,7 +10,7 @@ const Tab = (props) => {
       >
         {props.children}
         <img
-          className={`w-full h-full object-cover ${props.imagePosition}`}
+          className={`w-full h-full object-cover bg-repeat ${props.imagePosition}`}
           src={props.image}
         />
 

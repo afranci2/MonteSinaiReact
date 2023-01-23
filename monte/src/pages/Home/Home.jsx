@@ -23,6 +23,7 @@ import IglesiasCardImage from "../../assets/img/CHURCH-BUILDING.jpg";
 import UneteCardImage from "../../assets/img/izzy.jpg";
 import EventosCardImage from "../../assets/img/nimsy.jpg";
 import MediaQuery from "react-responsive";
+import "../../pages/Home/home.css";
 
 function Home() {
   return (
@@ -115,7 +116,7 @@ function Home() {
         </div>
         <div className="DESKTOP">
           <MediaQuery minWidth={800}>
-            <div className=" grid grid-cols-2 gap-12 w-10/12 m-auto max-w-screen">
+            <div className="hello gap-12 w-10/12 m-auto max-w-screen">
               <div className="LEFT-SMALL-TABS  flex flex-col gap-4">
                 <SideTab headerText="Siguenos">
                   <div className="content">
@@ -146,41 +147,39 @@ function Home() {
                   buttonLink="./"
                 />
               </div>
-              
-              <div className="col-span-12 w-full maintabs">
+              <div className="RIGHT-MAIN-TABS col-span-12 w-full maintabs">
                 <TextLeftTab
-                  headerText="Eventos
-          "
-                  subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
-                  buttonLink="/unete"
-                  buttonText="EVENTOS"
-                  image={EventosCardImage}
+                  headerText="Conocernos"
+                  subheadingText="Ver nuestra mision, lideres, historia, y mas
+"
+                  buttonLink="/conocernos"
+                  buttonText="VER AHORA"
+                  image={ConocernosCardImage}
+                  imagePosition="object-left"
                 />
                 <TextRightTab
-                  headerText="Eventos
-          "
-                  subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
-                  buttonLink="/unete"
-                  buttonText="EVENTOS"
-                  image={EventosCardImage}
+                  headerText="Iglesias"
+                  subheadingText="¿Listo para conocer una iglesia? Encuentre una congregación cerca de ti
+                  "
+                  buttonLink="/iglesias"
+                  buttonText="ACOMPANANOS"
+                  image={IglesiasCardImage}
                 />
 
                 <TextLeftTab
-                  headerText="Eventos
-          "
-                  subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
+                  headerText="Unete a Nosotros
+                  "
+                  subheadingText="Es hora de ver lo que Dios puede hacer a través de ti. ¡Únase a nosotros!
+                  "
                   buttonLink="/unete"
-                  buttonText="EVENTOS"
-                  image={EventosCardImage}
+                  buttonText="UNETE"
+                  image={UneteCardImage}
                 />
                 <TextRightTab
                   headerText="Eventos
-          "
+                "
                   subheadingText="¡No te lo pierdas! Apunte en el calendario y acompáñenos en los eventos importantes
-          "
+                "
                   buttonLink="/unete"
                   buttonText="EVENTOS"
                   image={EventosCardImage}

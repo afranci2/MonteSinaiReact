@@ -5,7 +5,7 @@ import SocialMediaTab from "./SocialMediaTab";
 
 const SocialMedia = () => {
   return (
-    <div className="flex flex-col gap-8 py-4">
+    <div className="flex flex-col gap-6 py-8">
       <SocialMediaTab
         icon={<AiFillFacebook size={30} fill="#1778F2" />}
         text="Facebook"

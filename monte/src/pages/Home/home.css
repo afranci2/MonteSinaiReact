@@ -189,3 +189,18 @@ display: flex;
 gap: 1rem;
 justify-content: center;
 }
+
+.hello {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    }
+    
+    .LEFT-SMALL-TABS { grid-area: 1 / 1 / 2 / 2; }
+    .RIGHT-MAIN-TABS { grid-area: 1 / 2 / 2 / 3; }
