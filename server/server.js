@@ -6,8 +6,8 @@ const PORT = 8000
 
 let churches = [
     {
-        "Location": "Pawtucket",
-        "Lead Pastor(s)": [{ "Samuel Francisco": "" }, { "Isabel Francisco": "" }],
+        "LocationAndDescription": {"Pawtucket":""},
+        "LeadPastor(s)AndDescription": [{ "Samuel Francisco": "" }, { "Isabel Francisco": "" }],
         "Associate Pastor(s)": [{ "Javier Torres": "" }],
         "ServiceTimes": {
             ServicioEvangelistico: { Domingos: "3:00PM" },
@@ -20,8 +20,6 @@ let churches = [
             Instagram: "",
             YouTube: "",
         },
-        "ChurchDescitpion": "",
-
     },
 ]
 
