@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 
 const MainButton = (props) => {
   return (
-    <Link
-      to={props.link}
-      className={
-        "container rounded-full bg-red-800 w-fit my-4 p-4 px-12 shadow-sm"
-      }
-    >
-      <p className="flex justify-center text-xs font-bold"> {props.text}</p>
-    </Link>
+    <div className="container w-fit my-4">
+      <Link to={props.link}>
+        <div className="bg-red-800 shadow-sm px-12 rounded-lg p-4">
+          <p className="flex justify-center text-xs font-bold"> {props.text}</p>
+        </div>
+      </Link>
+    </div>
   );
 };
 
