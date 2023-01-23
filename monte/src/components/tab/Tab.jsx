@@ -4,9 +4,9 @@ import { Card, SecondaryButton } from "../../components/index";
 
 const Tab = (props) => {
   return (
-    <div className="my-8 w-fit relative overflow-hidden rounded-xl drop-shadow-md">
+    <div className="my-8 w-fit relative rounded-xl drop-shadow-md">
       <div
-        className={`whole ${props.height} bg-${props.backgroundColor}` }
+        className={`rounded-xl whole ${props.height} bg-${props.backgroundColor}` }
       >
               {props.children}
         <img
@@ -15,7 +15,7 @@ const Tab = (props) => {
         />
         
         <div
-          className={`flex p-8 text-center rounded-md ${props.contentPosition} absolute z-50 content ${props.contentHeight} items-center bg-red-800/90 ${props.contentWidth}`}
+          className={props.children ? "hidden" :`flex p-8 text-center rounded-md ${props.contentPosition} absolute z-50 content ${props.contentHeight} items-center bg-red-800/90 ${props.contentWidth}`}
         >
             
           <div className="flex flex-col m-auto w-full">

@@ -30,7 +30,7 @@ function Home() {
       <Navbar />
       <Header>
         <img
-          className="backdrop-blur-sm h-2/6 w-auto flex place-content-center justify-center absolute m-auto z-40 md:h-2/5 md:w-auto"
+          className=" h-2/6 w-auto flex place-content-center justify-center absolute m-auto z-40 md:h-80 md:w-auto"
           src={Logo}
         />
         <Video video={HeroVideo} />

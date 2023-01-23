@@ -72,7 +72,7 @@ function Navbar() {
         <div className="desktop-logo hidden md:flex items-center cursor-pointer">
           <Link to="/">
             {" "}
-            <img className="w-48 mr-2 mt-4 mb-4" src={logo} />
+            <img className="w-52 mr-2 mt-4 mb-4" src={logo} />
           </Link>
         </div>
         <div className="mobile__logo mx-auto block relative w-16 h-auto md:hidden">
@@ -81,7 +81,7 @@ function Navbar() {
           </a>
         </div>
         <div>
-          <ul className="desktop-links text-sm font-medium hidden md:flex items-center mr-3 ">
+          <ul className="desktop-links text-sm font-regular hidden md:flex items-center mr-3 ">
             <li className="ml-12 inline-block " key={1}>
               <Link to="/conocernos">Conocernos</Link>
             </li>
