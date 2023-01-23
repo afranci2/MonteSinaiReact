@@ -6,11 +6,15 @@ const Tab = (props) => {
   return (
     <div className="my-8 w-full relative drop-shadow-md">
       <div
-        className={`whole ${props.height} rounded-xl bg-${props.backgroundColor} overflow-hidden `}
+        className={`whole ${props.height} rounded-xl bg-${props.backgroundColor} flex overflow-hidden`}
       >
         {props.children}
         <img
-          className={`w-full h-full object-cover bg-repeat ${props.imagePosition}`}
+          className={`h-full object-cover object-top ${props.imagePosition}`}
+          src={props.image}
+        />
+        <img
+          className={`h-full object-cover object-top ${props.imagePosition2}`}
           src={props.image}
         />
 

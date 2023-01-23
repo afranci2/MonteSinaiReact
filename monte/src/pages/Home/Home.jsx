@@ -83,7 +83,7 @@ function Home() {
                 buttonLink="/conocernos"
                 buttonText="VER AHORA"
                 image={ConocernosCardImage}
-                imagePosition="object-left"
+                imagePosition="object-left "
               />
               <MobileCard
                 headerText="Iglesias"
@@ -147,7 +147,7 @@ function Home() {
                   buttonLink="./"
                 />
               </div>
-              <div className="RIGHT-MAIN-TABS col-span-12 w-full maintabs">
+              <div className="RIGHT-MAIN-TABS  w-full maintabs">
                 <TextLeftTab
                   headerText="Conocernos"
                   subheadingText="Ver nuestra mision, lideres, historia, y mas
@@ -155,7 +155,7 @@ function Home() {
                   buttonLink="/conocernos"
                   buttonText="VER AHORA"
                   image={ConocernosCardImage}
-                  imagePosition="object-left"
+
                 />
                 <TextRightTab
                   headerText="Iglesias"
@@ -173,6 +173,8 @@ function Home() {
                   "
                   buttonLink="/unete"
                   buttonText="UNETE"
+                  imagePosition="object-bottom "
+
                   image={UneteCardImage}
                 />
                 <TextRightTab
