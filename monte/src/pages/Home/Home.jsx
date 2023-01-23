@@ -73,7 +73,7 @@ function Home() {
       </Header>
       <div className="tabs-section">
         <div className="MOBILE">
-          <MediaQuery maxWidth={800}>
+          <MediaQuery maxWidth={799}>
             <DefaultBody>
               <MobileCard
                 headerText="Conocernos"
@@ -116,7 +116,7 @@ function Home() {
         <div className="DESKTOP">
           <MediaQuery minWidth={800}>
             <div className=" grid grid-flow-col gap-12 w-10/12 m-auto max-w-screen">
-              <div className="w-full LEFT-SMALL-TABS ">
+              <div className="w-full LEFT-SMALL-TABS flex flex-col gap-4">
                 <SideTab headerText="Siguenos">
                   <div className="content">
                     <SocialMedia />
