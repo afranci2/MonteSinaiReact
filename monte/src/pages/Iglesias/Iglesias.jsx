@@ -6,10 +6,10 @@ const Iglesias = () => {
   async function retrieveData() {
     const res = await fetch("http://localhost:8000/iglesias/pawtucket");
     const data = await res.json();
-    const stringedData = await JSON.stringify(data)
+    const stringedData = JSON.stringify(data)
     const parsedData = JSON.parse(stringedData)
-    const churchInfo = parsedData[0].LocationAndDescription.Pawtucket
-    console.log(parsedData[0].LocationAndDescription);
+    const churchInfo = parsedData["name"]
+    console.log(parsedData["name"]);
     setData(churchInfo)
   }
 
