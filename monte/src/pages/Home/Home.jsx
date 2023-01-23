@@ -115,8 +115,8 @@ function Home() {
         </div>
         <div className="DESKTOP">
           <MediaQuery minWidth={800}>
-            <div className=" grid grid-flow-col gap-12 w-10/12 m-auto max-w-screen">
-              <div className="w-full LEFT-SMALL-TABS flex flex-col gap-4">
+            <div className=" grid grid-cols-2 gap-12 w-10/12 m-auto max-w-screen">
+              <div className="LEFT-SMALL-TABS  flex flex-col gap-4">
                 <SideTab headerText="Siguenos">
                   <div className="content">
                     <SocialMedia />
@@ -146,7 +146,8 @@ function Home() {
                   buttonLink="./"
                 />
               </div>
-              <div className="w-full maintabs">
+              
+              <div className="col-span-12 w-full maintabs">
                 <TextLeftTab
                   headerText="Eventos
           "
