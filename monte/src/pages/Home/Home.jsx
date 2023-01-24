@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Banner,
+  Banner2,
   TextLeftTab,
   TextRightTab,
   MobileCard,
@@ -211,6 +212,14 @@ function Home() {
         }
         buttonText="Conocernos"
       ></Header>
+      <Header>
+        <Banner2 position="top-0">
+          <div className="flex align-center w-11/12 gap-12 m-auto text-black">
+            <p className="font-semibold text-4xl">Eventos</p>
+            <p>Ver ahora</p>
+          </div>
+        </Banner2>
+      </Header>
       <Footer />
     </div>
   );

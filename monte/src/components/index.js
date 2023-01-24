@@ -1,4 +1,6 @@
 export { default as Banner } from './banner/Banner'
+export { default as Banner2 } from './banner/Banner2'
+
 export { default as Card } from './card/Card'
 export { default as MainButton } from './mainButton/MainButton'
 export { default as MobileMenu } from './mobileMenu/MobileMenu'

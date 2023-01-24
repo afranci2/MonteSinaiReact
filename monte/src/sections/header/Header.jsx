@@ -4,7 +4,7 @@ import Video from "../video/Video";
 
 function Header(props) {
   return (
-    <div className="overflow-hidden wrapper relative flex justify-center items-center w-screen h-screen">
+    <div className="overflow-hidden wrapper relative flex justify-center items-center w-screen h-screen ">
       <div
         className={`${
           props.classChangeText
