@@ -7,7 +7,7 @@ const TertiaryButton = (props) => {
       <Link to={props.link}>
         <div
           className={
-            "m-auto h-fit rounded-md bg-yellow-400 justify-center p-4 w-fit px-6 text-black shadow-sm"
+            `m-auto h-fit rounded-md ${props.buttonColor} justify-center p-4 w-fit px-6 text-black shadow-sm`
           }
         >
           <p className="overflow-hidden flex justify-center text-xs font-semibold text-center">

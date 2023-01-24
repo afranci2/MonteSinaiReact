@@ -13,7 +13,7 @@ function Header(props) {
         } ${!props.headerText && "hidden"} `}
       >
         <div className="flex flex-col gap-2">
-          <p className="font-semibold text-3xl">{props.headerText}</p>
+          <p className="font-semibold text-4xl">{props.headerText}</p>
           <p
             className={`${
               props.contentPosition === "center"

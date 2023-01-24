@@ -24,6 +24,7 @@ import UneteCardImage from "../../assets/img/izzy.jpg";
 import EventosCardImage from "../../assets/img/nimsy.jpg";
 import MediaQuery from "react-responsive";
 import "../../pages/Home/home.css";
+import ConocernosVideo from "../../assets/video/promo.mp4";
 
 function Home() {
   return (
@@ -124,6 +125,7 @@ function Home() {
                   </div>
                 </SideTab>
                 <SideTab
+                  buttonColor="bg-yellow-400"
                   headerText="Listo para servir?
               "
                   subheaderText="Inscríbase ahora como voluntario y vea lo que Dios puede hacer a través de usted.
@@ -132,6 +134,7 @@ function Home() {
                   buttonLink="./"
                 />
                 <SideTab
+                  buttonColor="bg-red-800 text-white"
                   headerText="Diezmar"
                   subheaderText="Dar una ofrenda o programa diezmos recurrentes.
               "
@@ -139,6 +142,7 @@ function Home() {
                   buttonLink="./"
                 />
                 <SideTab
+                  buttonColor="bg-yellow-400"
                   headerText="COVID-19
               "
                   subheaderText="Consulte nuestra política de COVID-19 y los nuevos desarrollos
@@ -190,11 +194,11 @@ function Home() {
         </div>
       </div>
       <Header
-        video={HeroVideo}
+        video={ConocernosVideo}
         contentPosition="center"
         headerText="Un Genuino Llamado de Dios"
         subheadingText={
-          <div>
+          <div className="">
             <p>
               A lo largo de este movimiento, el fuego seguirá ardiendo en cada
               corazón como en el día de Pentecostés.
