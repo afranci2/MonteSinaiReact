@@ -14,13 +14,13 @@ function Header(props) {
       >
         <div className="flex flex-col gap-2">
           <p className="font-semibold text-4xl">{props.headerText}</p>
-          <p
+          <div
             className={`${
               props.contentPosition === "center"
             } ? "m-auto" : " sm: w-3/4" `}
           >
             {props.subheadingText}
-          </p>
+          </div>
         </div>
         <div className="button flex py-6">
           <Button

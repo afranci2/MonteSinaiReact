@@ -15,6 +15,7 @@ import {
   Video,
   DefaultBody,
   HomeTab,
+  BodySectionImageLeft,
 } from "../../sections/index";
 import HeroVideo from "../../assets/video/church intro video.mp4";
 import Logo from "../../assets/logo/logo.png";
@@ -199,11 +200,11 @@ function Home() {
         contentPosition="center"
         headerText="Un Genuino Llamado de Dios"
         subheadingText={
-          <div className="">
+          <div>
             <p>
               A lo largo de este movimiento, el fuego seguirá ardiendo en cada
               corazón como en el día de Pentecostés.
-            </p>{" "}
+            </p>
             <br></br>
             <p className="font-light">
               Deja que Dios encienda el fuego dentro de ti.
@@ -212,14 +213,15 @@ function Home() {
         }
         buttonText="Conocernos"
       ></Header>
-      <Header>
-        <Banner2 position="top-0">
+      <DefaultBody>
+        <Banner2 position="top-0 m-auto">
           <div className="flex align-center w-11/12 gap-12 m-auto text-black">
-            <p className="font-semibold text-4xl">Eventos</p>
-            <p>Ver ahora</p>
+            <p className="font-semibold text-3xl">Eventos</p>
+            <p className=" my-auto">Ver ahora</p>
           </div>
         </Banner2>
-      </Header>
+
+      </DefaultBody>
       <Footer />
     </div>
   );

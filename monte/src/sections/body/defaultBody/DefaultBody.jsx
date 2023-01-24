@@ -2,7 +2,7 @@ import React from 'react'
 
 const DefaultBody = (props) => {
   return (
-    <div className='relative m-auto p-8 md:w-11/12'>
+    <div className='relative w-full min-h-screen'>
       {props.children}
     </div>
   )
