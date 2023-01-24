@@ -29,14 +29,14 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Header>
+      <Header video={HeroVideo}>
         <img
           className=" h-2/6 w-auto flex place-content-center justify-center absolute m-auto z-40 md:h-80 md:w-auto"
           src={Logo}
         />
-        <Video video={HeroVideo} />
       </Header>
       <Header
+        contentPosition="left"
         image={Michael}
         classChangeText="absolute top-1/4 flex flex-col gap-2 w-10/12"
         headerText="Bienvenidos"
@@ -155,7 +155,6 @@ function Home() {
                   buttonLink="/conocernos"
                   buttonText="VER AHORA"
                   image={ConocernosCardImage}
-
                 />
                 <TextRightTab
                   headerText="Iglesias"
@@ -174,7 +173,6 @@ function Home() {
                   buttonLink="/unete"
                   buttonText="UNETE"
                   imagePosition="object-bottom "
-
                   image={UneteCardImage}
                 />
                 <TextRightTab
@@ -191,6 +189,24 @@ function Home() {
           </MediaQuery>
         </div>
       </div>
+      <Header
+        video={HeroVideo}
+        contentPosition="center"
+        headerText="Un Genuino Llamado de Dios"
+        subheadingText={
+          <div>
+            <p>
+              A lo largo de este movimiento, el fuego seguirá ardiendo en cada
+              corazón como en el día de Pentecostés.
+            </p>{" "}
+            <br></br>
+            <p className="font-light">
+              Deja que Dios encienda el fuego dentro de ti.
+            </p>
+          </div>
+        }
+        buttonText="Conocernos"
+      ></Header>
       <Footer />
     </div>
   );
