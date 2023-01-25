@@ -211,7 +211,7 @@ function Home() {
             </p>
           </div>
         }
-        buttonText="Conocernos"
+        buttonText=""
       ></Header>
       <DefaultBody>
         <Banner2 position="top-0 m-auto">
