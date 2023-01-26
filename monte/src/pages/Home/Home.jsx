@@ -16,6 +16,7 @@ import {
   DefaultBody,
   HomeTab,
   BodySectionImageLeft,
+  BodySectionImageRight,
 } from "../../sections/index";
 import HeroVideo from "../../assets/video/church intro video.mp4";
 import Logo from "../../assets/logo/logo.png";
@@ -27,6 +28,7 @@ import EventosCardImage from "../../assets/img/nimsy.jpg";
 import MediaQuery from "react-responsive";
 import "../../pages/Home/home.css";
 import ConocernosVideo from "../../assets/video/promo.mp4";
+import AnniversaryPicture from '../../assets/img/50Anni.F4.png'
 
 function Home() {
   return (
@@ -220,7 +222,8 @@ function Home() {
             <p className=" my-auto">Ver ahora</p>
           </div>
         </Banner2>
-
+        <BodySectionImageLeft image={AnniversaryPicture}></BodySectionImageLeft>
+        <BodySectionImageRight />
       </DefaultBody>
       <Footer />
     </div>

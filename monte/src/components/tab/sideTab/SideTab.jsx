@@ -17,7 +17,7 @@ const SideTab = (props) => {
           <p className="text-black text-lg font-medium">{props.headerText} </p>
           <p className="text-black text-xs ">{props.subheaderText}</p>
           <div className={!props.buttonText ? "hidden" : "button mt-8"}>
-            <TertiaryButton text={props.buttonText} link={props.link} buttonColor={props.buttonColor}/>
+            <TertiaryButton position="center" text={props.buttonText} link={props.link} buttonColor={props.buttonColor}/>
           </div>
           {props.children}
         </div>
