@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TertiaryButton = (props) => {
   return (
-    <div className={` ${props.position==="center" && "m-auto"} flex justify-center max-h-fit w-fit drop-shadow-md`}>
+    <div className={` ${props.position==="center" && "m-auto"} ${props.margin} flex justify-center max-h-fit w-fit drop-shadow-md`}>
       <Link to={props.link}>
         <div
           className={

@@ -15,8 +15,10 @@ import {
   Video,
   DefaultBody,
   HomeTab,
+  BodyImageText,
   BodySectionImageLeft,
   BodySectionImageRight,
+
 } from "../../sections/index";
 import HeroVideo from "../../assets/video/church intro video.mp4";
 import Logo from "../../assets/logo/logo.png";
@@ -28,7 +30,8 @@ import EventosCardImage from "../../assets/img/nimsy.jpg";
 import MediaQuery from "react-responsive";
 import "../../pages/Home/home.css";
 import ConocernosVideo from "../../assets/video/promo.mp4";
-import AnniversaryPicture from '../../assets/img/50Anni.F4.png'
+import AnniversaryPicture from "../../assets/img/50Anni.F4.png";
+import {Link} from 'react-router-dom'
 
 function Home() {
   return (
@@ -217,13 +220,16 @@ function Home() {
       ></Header>
       <DefaultBody>
         <Banner2 position="top-0 m-auto">
-          <div className="flex align-center w-11/12 gap-12 m-auto text-black">
+          <div className="align-center w-11/12 gap-12 m-auto text-black">
             <p className="font-semibold text-3xl">Eventos</p>
-            <p className=" my-auto">Ver ahora</p>
+            <Link to="/eventos">
+              <p className=" my-auto">Ver ahora</p>
+            </Link>
           </div>
         </Banner2>
-        <BodySectionImageLeft image={AnniversaryPicture}></BodySectionImageLeft>
-        <BodySectionImageRight />
+        <BodySectionImageLeft buttonText="Historia" headingText="50 anos" subheadingText="efwfw" buttonLink="/historia" image={AnniversaryPicture}/>
+
+        <BodySectionImageRight buttonText="Historia" headingText="50 anos" subheadingText="efwfw" buttonLink="/historia" image={AnniversaryPicture}/>
       </DefaultBody>
       <Footer />
     </div>

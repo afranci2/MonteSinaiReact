@@ -1,5 +1,7 @@
 export { default as BodySectionImageLeft } from './body/bodyImageText/imageLeftTextRight/BodySectionImageLeft'
 export { default as BodySectionImageRight } from './body/bodyImageText/imageRightTextLeft/BodySectionImageRight'
+export { default as BodyImageText } from './body/bodyImageText/BodyImageText'
+
 export { default as DefaultBody } from './body/defaultBody/DefaultBody'
 export { default as IglesiasMapListLeft } from './body/iglesiasMap/iglesiasListLeft/IglesiasMapListLeft'
 export { default as IglesiasMapListRight } from './body/iglesiasMap/iglesiasMapRight/IglesiasMapRight'
