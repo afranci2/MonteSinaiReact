@@ -223,7 +223,7 @@ function Home() {
           <div className="align-center w-11/12 gap-12 m-auto text-black">
             <p className="font-semibold text-3xl">Eventos</p>
             <Link to="/eventos">
-              <p className=" my-auto">Ver s</p>
+              <p className=" my-auto">Ver ahora</p>
             </Link>
           </div>
         </Banner2>
