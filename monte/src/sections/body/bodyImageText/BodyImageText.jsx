@@ -13,7 +13,7 @@ const BodyImageText = (props) => {
           <div></div>
         )}
         {props.imagePosition === "left" ? (
-          <img className=" h-full object-cover md:p-4 md:ml-12" src={props.image} />
+          <img className=" h-full object-cover md:p-4 md:ml-12 hidden" src={props.image} />
           ) : (
           <div></div>
         )}
