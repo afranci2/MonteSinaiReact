@@ -17,7 +17,7 @@ function Header(props) {
           <div
             className={`${
               props.contentPosition === "center"
-            } ? "m-auto" : " : w-3/4" `}
+            } ? "m-auto" : " sm: w-3/4" `}
           >
             {props.subheadingText}
           </div>
