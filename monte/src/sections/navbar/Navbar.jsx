@@ -71,14 +71,13 @@ function Navbar() {
         </div>
         <div className="desktop-logo hidden md:flex items-center cursor-pointer">
           <Link to="/">
-            {" "}
             <img className="w-52 mr-2 mt-4 mb-4" src={logo} />
           </Link>
         </div>
         <div className="mobile__logo mx-auto block relative w-16 h-auto md:hidden">
-          <a href="./index.html">
-            <img src={mobile__logo__file} />
-          </a>
+        <Link to="/">
+            <img className="w-52 mr-2 mt-4 mb-4" src={mobile__logo__file} />
+          </Link>
         </div>
         <div>
           <ul className="desktop-links text-sm font-regular hidden md:flex items-center mr-3 ">

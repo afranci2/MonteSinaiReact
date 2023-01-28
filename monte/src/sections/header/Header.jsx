@@ -17,12 +17,12 @@ function Header(props) {
           <div
             className={`${
               props.contentPosition === "center"
-            } ? "m-auto" : " sm: w-3/4" `}
+            } ? "m-auto" : " : w-3/4" `}
           >
             {props.subheadingText}
           </div>
         </div>
-        <div className="button flex py-6">
+        <div className={props.buttonText ? "button flex py-6" : "hidden"}>
           <Button
             color="bg-red-800"
             link={props.buttonLink}
@@ -32,8 +32,14 @@ function Header(props) {
         </div>
       </div>
       {props.children}
-      <img className="min-h-screen object-cover" src={props.image}></img>
-      <Video video={props.video} />
+      <div
+        className={
+          props.image ? "hidden" : "min-h-screen object-cover absolute"
+        }
+      >
+        <img src={props.image} />
+      </div>
+      <Video className={props.video ? "hidden" : ""} video={props.video} />
     </div>
   );
 }
