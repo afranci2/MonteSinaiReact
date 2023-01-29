@@ -35,7 +35,7 @@ function Header(props) {
       
 
         <img className="min-h-screen object-cover " src={props.image} />
-      <Video className={props.video ? "" : ""} video={props.video} />
+      <Video className={props.video ? "hidden" : ""} video={props.video} />
     </div>
   );
 }
