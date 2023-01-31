@@ -1,3 +1,6 @@
+TODO: ADD TESTIMONIAL TO CONOCERNOS AND HOME
+ADD BANNER TO HOME PAGE TO SIGN UP FOR VOLUNTEER OR EVENTOS OR GO TO LIVE ANYTIME WE ARE LIVE
+
 
 # Movimiento Pentecostal Monte Sinai Website
 
@@ -41,6 +44,8 @@ What optimizations did you make in your code? E.g. refactors, performance improv
 
 This is part two of this project. These are the optimizations
 ## Lessons Learned
+Animations: add animation similar to https://www.revolut.com/en-US/ when hovering over cards
+
 
 Scrum with another person on monte website
 SPLIT INTO TWO PARTS - first was html and css, but then wanted functionality and rebranding
@@ -66,3 +71,6 @@ We then needed to add next js for seo purposes and faster first contentful paint
 Look at some of my other projects
 
 CreateMyEssay - createmyessay.com
+
+
+GIT PSH

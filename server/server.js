@@ -50,7 +50,7 @@ app.get("/", (request, response) => {
 })
 
 app.get("/iglesias/pawtucket", (request, response) => {
-    response.json(churches)
+    response.json(churches[0])
 })
 
 app.listen(PORT, () => {
