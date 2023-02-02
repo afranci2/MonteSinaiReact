@@ -24,7 +24,9 @@ function Header(props) {
         </div>
         <div className={props.buttonText ? "button flex py-6" : "hidden"}>
           <Button
-            color="bg-red-800"
+            buttonColor={
+              props.buttonColor
+             ? `${props.buttonColor}` : "bg-red-800" }
             link={props.buttonLink}
             text={props.buttonText}
             buttonPosition={props.contentPosition}
