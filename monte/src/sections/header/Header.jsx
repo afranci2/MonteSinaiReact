@@ -19,7 +19,7 @@ function Header(props) {
               props.contentPosition === "center"
             } ? "m-auto" : " sm: w-3/4" `}
           >
-            {props.subheadingText}
+            {props.}
           </div>
         </div>
         <div className={props.buttonText ? "button flex py-6" : "hidden"}>
