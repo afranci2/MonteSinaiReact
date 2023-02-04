@@ -6,10 +6,11 @@ const Banner = (props) => {
     <div>
       {" "}
       <div
-        className={`${props.color} relative text-center h-28 object-cover bg-yellow-400 flex ${props.position} services m-auto justify-center w-full z-50`}
+        className={`${props.color} w-full text-center h-28 object-cover bg-yellow-500 flex ${props.position} justify-center z-50 object-center`}
       >
-        <div className="inner absolute z-0 flex h-full w-full bg-gradient-to-r from-yellow-500/50 to-yellow-900/40">
+        <div className="items-center z-0 justify-center flex m-auto">
           {props.children}
+  
         </div>
       </div>
     </div>

@@ -218,11 +218,11 @@ function Home() {
         buttonText="Conocernos"
       ></Header>
       <DefaultBody>
-        <Banner2 position="top-0 m-auto">
-          <div className="align-center w-11/12 gap-12 m-auto text-black">
+        <Banner2 position="top-0">
+          <div className="gap-12 text-black">
             <p className="font-medium font-serif text-4xl">Eventos</p>
             <Link to="/eventos">
-              <p className=" my-auto">Ver ahora</p>
+              <p className="">Ver ahora</p>
             </Link>
           </div>
         </Banner2>
