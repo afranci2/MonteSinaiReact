@@ -99,7 +99,7 @@ const Footer = () => {
               <p className="text-black text-xs">Terms of Service</p>
             </Link>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
