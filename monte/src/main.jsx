@@ -40,6 +40,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route exact path="/iglesias/:id" element={<Iglesias />}></Route>
         <Route exact path="/rights-reserved" element={<RightsReserved />}></Route>
         <Route exact path="/terms-of-service" element={<TermsOfService />}></Route>
+        <Route exact path="/terms-of-service" element={<TermsOfService />}></Route>
+
 
       </Routes>
     </Router>

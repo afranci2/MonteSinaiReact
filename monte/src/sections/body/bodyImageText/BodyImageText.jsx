@@ -1,6 +1,5 @@
 import React from "react";
 import { TertiaryButton } from "../../../components";
-import PropTypes from "prop-types";
 
 const BodyImageText = (props) => {
   return (
@@ -37,11 +36,6 @@ const BodyImageText = (props) => {
       </div>
     </div>
   );
-};
-
-BodyImageText.propTypes = {
-  children: PropTypes.oneOf(["left", "right"]),
-  image: PropTypes.string.isRequired,
 };
 
 export default BodyImageText;
